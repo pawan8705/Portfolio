@@ -1,6 +1,5 @@
 // import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
-import Tilt from 'react-parallax-tilt';
 import profileImage from '../../assets/profile.jfif';
 
 const About = () => {
@@ -60,21 +59,15 @@ const About = () => {
         </div>
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
-          <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full md:rounded-none"
-            tiltMaxAngleX={20}
-            tiltMaxAngleY={20}
-            perspective={1000}
-            scale={1.05}
-            transitionSpeed={1000}
-            gyroscope={true}
+          <div
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 md:rounded-[50px] rounded-full transform transition-transform duration-300 hover:scale-105"
           >
             <img
               src={profileImage}
               alt="Pawan Tripathi"
-              className="w-full h-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)] rounded-full md:rounded-none"
+              className="w-full h-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)] rounded-full md:rounded-[50px]"
             />
-          </Tilt>
+          </div>
         </div>
       </div>
     </section>
